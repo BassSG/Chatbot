@@ -2,7 +2,7 @@
   "name": "Trip-Planner",
   "short_name": "Chatbot",
   "description": "Helpful Assistant AI",
-  "start_url": "https://script.google.com/macros/s/AKfycbyXdMff9wNmLPRrrgn3euHJG19o_Ij_vw0t1svSYSaJIf393FXCKDrTbFN2X_ewCfMV/exec/index.html",
+  "start_url": "https://script.google.com/macros/s/AKfycby89utdSKAIYx891LRKbPM71y9KKpHx4rGxFZU0q3qcx5XaRzr7g0w4oaUj6BWnnLnt/exec/index.html",
   "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#000000",
