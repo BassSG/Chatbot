@@ -1,0 +1,23 @@
+{
+  "name": "Trip-Planner",
+  "short_name": "Chatbot",
+  "description": "Helpful Assistant AI",
+  "start_url": "https://script.google.com/macros/s/AKfycbyXdMff9wNmLPRrrgn3euHJG19o_Ij_vw0t1svSYSaJIf393FXCKDrTbFN2X_ewCfMV/exec/index.html",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://s21-kling.klingai.com/bs2/upload-ylab-stunt-sgp/se/ai_portal_sgp_mmu_txt2img_aiweb_v15/54dcb711-c35a-4082-bf18-aaed1d4e1d8a_image.png?x-kcdn-pid=112372",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://s21-kling.klingai.com/bs2/upload-ylab-stunt-sgp/se/ai_portal_sgp_mmu_txt2img_aiweb_v15/54dcb711-c35a-4082-bf18-aaed1d4e1d8a_image.png?x-kcdn-pid=112372",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "prefer_related_applications": false
+}
