@@ -6,17 +6,15 @@
     <base target="_top">
     <title>Chatbot</title>
     
-    <!-- ส่วน icon และ meta รองรับ PWA -->
+    <!-- ส่วน icon สำหรับแท็บและ shortcut (ไม่แสดงในเนื้อหาของหน้าเว็บ) -->
     <link rel="icon" type="image/png" href="https://tinypic.host/images/2025/03/04/1x1_prompt__________________________-1-Photoroom.png">
     <link rel="apple-touch-icon" href="https://tinypic.host/images/2025/03/04/1x1_prompt__________________________-1-Photoroom.png">
     <link rel="manifest" href="manifest.json">
-    
-    <!-- เปิดใช้งาน Standalone บนมือถือ -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Trip-Planner">
+    <meta name="theme-color" content="#4285f4">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Smart-Doc">
-    <meta name="theme-color" content="#4285f4">
 
     <style>
         /* Reset CSS */
@@ -40,7 +38,20 @@
                          Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         
-        /* Splash Screen */
+        /* โลโก้เว็บไซต์ที่แสดงในหน้าเว็บ */
+        
+        #app-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        /* Default: มือถือ */
         .app-splash {
             position: fixed;
             top: 0;
@@ -56,21 +67,11 @@
             transition: opacity 0.5s ease-out;
         }
 
+        /* Desktop: จอกว้าง >= 768px */
         @media (min-width: 768px) {
             .app-splash {
                 background-image: url("https://s21-kling.klingai.com/bs2/upload-ylab-stunt-sgp/se/ai_portal_sgp_mmu_txt2img_aiweb_v15/5231a616-4c5f-47cc-8c8f-857fa5297b5a_image.png?x-kcdn-pid=112372");
             }
-        }
-
-        #app-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            z-index: 1;
-            overflow: hidden;
         }
 
         @supports (padding: max(0px)) {
@@ -88,7 +89,7 @@
     <div class="app-splash" id="splash-screen"></div>
 
     <iframe id="app-container" 
-        src="https://script.google.com/macros/s/AKfycby89utdSKAIYx891LRKbPM71y9KKpHx4rGxFZU0q3qcx5XaRzr7g0w4oaUj6BWnnLnt/exec/?utm_source=pwa">
+        src="https://script.google.com/macros/s/AKfycby89utdSKAIYx891LRKbPM71y9KKpHx4rGxFZU0q3qcx5XaRzr7g0w4oaUj6BWnnLnt/exec">
     </iframe>
     
     <script>
