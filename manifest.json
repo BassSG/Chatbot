@@ -2,8 +2,8 @@
   "name": "Smart-Doc",
   "short_name": "SmartDoc",
   "description": "Helpful Assistant AI",
-  "start_url": "https://script.google.com/macros/s/AKfycby89utdSKAIYx891LRKbPM71y9KKpHx4rGxFZU0q3qcx5XaRzr7g0w4oaUj6BWnnLnt/exec/index.html",
-  "display": "browser",
+  "start_url": "https://script.google.com/macros/s/AKfycby89utdSKAIYx891LRKbPM71y9KKpHx4rGxFZU0q3qcx5XaRzr7g0w4oaUj6BWnnLnt/exec/?utm_source=pwa",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
